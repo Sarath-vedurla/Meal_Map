@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const express = require("express");
 const app = express();
-const connectDB = async () => {
+const connectDB =  () => {
 await mongoose.connect("mongodb+srv://sarathvedurla:Sunny@5002@cluster0.w08a0.mongodb.net/sarathdb?retryWrites=true&w=majority&appName=Cluster0");
     .then(() => {
         console.log("Connected to database");
